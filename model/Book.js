@@ -20,9 +20,8 @@ const bookSchema = new Schema ({
         required: true
     },
     availability: {
-        type: Boolean,
-        required: true
-    }
+        type: Boolean
+    },
 });
 
 module.exports = mongoose.model("Book", bookSchema);

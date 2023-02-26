@@ -11,7 +11,8 @@ const app = express();
 app.use(express.json())
 app.use("/books", router)
 
-mongoose.connect("mongodb+srv://admin:EUMLhE4KhzFZ1IXe@cluster0.drmbvoq.mongodb.net/bookStore?retryWrites=true&w=majority")
+//mongodb+srv://admin:EUMLhE4KhzFZ1IXe@cluster0.drmbvoq.mongodb.net/bookStore?retryWrites=true&w=majority
+mongoose.connect("")
         .then(() => console.log("connected to database!!!"))
         .then(() => {
             app.listen(3000);
